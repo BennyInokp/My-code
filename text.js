@@ -1,15 +1,15 @@
-const buttons - document.getElementsByClassName("button");
+const buttons = document.getElementsByClassName("button"  );
 
  function buttonRed(){
  buttons[0].style.backgroundColor='red';
 };
-function  buttonYelow(){
+function buttonYellow(){
     buttons[1].style.backgroundColor='yellow';
 };
 function buttonBlue(){
     buttons[2].style.backgroundColor='blue';
 };
-function buttionGreen(){
+function buttonGreen(){
    buttons[3].style.backgroundColor='green';
 };
 

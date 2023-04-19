@@ -49,7 +49,7 @@
 //}
 //console.log(topSalary(salaries));
 
-let user = {
+/*let user = {
   name: "john",
   years: 30,
   isAdmin: "false",
@@ -64,4 +64,12 @@ let isAdmin = user.isAdmin;
 
 console.log(name);
 console.log(age);
-console.log(isAdmin);
+console.log(isAdmin);*/
+//write a function sum that works like this: sum(a)(b)= a+b
+
+function sum(a){ 
+  return function(b){
+  return a+b
+  }
+}
+consoe.log(sum(3)(7));

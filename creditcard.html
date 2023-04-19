@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDIT CARD</title>
+</head>
+<h2><strong>CREDIT CARD</strong></h2>
+<body>
+     <input type="text" size="20" name="card-number" id="card-number"  placeholder="Enter Card Number" maxLength = "19" oninput="focusNextInput(this,'card-holder');">
+        <input type="text" size="20" name="card-holder" id="card-holder" placeholder="Enter Card Holder's Name" maxlength="16" oninput="focusNextInput(this,'date');">
+        <input type="date" name="date" id="date" placeholder="--/----" maxlength="10" oninput="focusNextInput(this,'cvv');">
+        <input type="text" size="10" name="cvv" id="cvv" placeholder="Enter CVV">
+        <input type="submit" value="checkout" name="checkout" id="checkout">
+
+   <script>
+    const inputField = document.querySelector("input");
+      inputField.addEventListener("keydown", (event) => {
+         if(event.key == "Backspace"){
+            input.textContent+=event.key
+         }
+         if(event.key == "Backspace"){
+            input.textContent+=event.key
+         } 
+         if(inputField.value.length ==4)
+         inputField.value = inputField.value + " ";
+         else if(inputField.value.length == 9)
+         inputField.value = inputField.value + " ";
+         else if(inputField.value.lenght == 14)
+         inputField.value = inputField.value + " ";
+         else if(inputField.value.length ==19)
+         inputField.value = inputField.value + " ";
+        });
+          
+
+    function focusNextInput (currentInput, nextInputId){
+        if (currentInput.value.length === currentInput.maxLength){
+            document.getElementById(nextInputId).focus();
+        }
+    }
+</script>
+</body>
+</html>
+          
+
+    
+        
+    
